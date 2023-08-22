@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+#body{
+    overflow: hidden;
+}
+
 /* general css start  */
 
 :root {
@@ -14,21 +18,19 @@
     --active-bg: #C7DBFF;
 }
 
-.common-fonts {
+.common-login-fonts {
     color: #000;
     font-family: DM Sans;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5rem;
     letter-spacing: -0.02563rem;
-    text-transform: capitalize;
-
 }
 
 /* general css start ends */
 
-/* login page css starts */
+/* login password page css starts */
 
 .main-container {
     background-color: var(--white);
@@ -57,14 +59,14 @@
 }
 
 .main-logo {
-    margin-top: 1rem;
+    margin-top: 0.5rem;  
 }
 
 .main-welcome {
     color: #000;
-    font-size: 1.375rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 0.9rem;
+    margin-bottom: 0.5rem;
 
 }
 
@@ -77,12 +79,12 @@
     text-align: left;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 
 .main-create-account {
     color: var(--secondary, #505050);
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: 500;
 }
 
@@ -91,8 +93,9 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    margin: 1rem;
+    margin:0.9rem 1rem;
     padding: 0.6rem;
+    cursor: pointer;
 }
 
 .main-create-account a {
@@ -111,13 +114,13 @@
 
 .main-phone {
     color: var(--light-grey);
-    font-size: 0.75rem;
+    font-size: 0.65rem;
 }
 
 .main-phone-input {
-    font-size: 1rem;
+    font-size: 0.875rem;
     outline: none;
-    border: none;
+    border: none; 
     width: 100%;
 }
 
@@ -158,15 +161,22 @@
     margin-right: 0.5rem;
 }
 
+.pwd-button a{
+    border: none;
+    text-decoration: none;
+}
+
 .button-login {
     width: 100%; 
-    margin-top: 1rem; 
+    margin-top: 0.9rem; 
+    border: 1px solid var(--acc-color);
+    color: var(--acc-color);
 }
 
 .login-btn {
     text-align: center;
     width: 100%;
-    height: 3.625rem;
+    height: 3rem;
     cursor: pointer;
     border: 1px solid var(--border-color);
     background-color: var(--white);
@@ -174,11 +184,9 @@
 }
 
 
-/* login page css ends */
+/* login password page css ends */
 
-/* otp section css  */
-
-
+/*login otp section css  */
 
 .otp-cards {
     display: flex;
@@ -204,22 +212,76 @@
 }
 
 .otp-input {
-    font-size: 1rem;
+    font-size: 0.875rem;
     outline: none;
     border: none;
     width: 100%;
     text-align: center;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* login otp section css ends */
 
 
+/* register page additional css starts */
 
-/* otp section css ends */
+
+.main-select {
+    padding: 0;
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    width: 100%;
+    font-size: 0.875rem;
+    outline: none;
+    cursor: pointer;
+    padding-left: 0.88rem;
+    background:none;
+}
+
+.main-sports{
+    padding-left: 0.88rem;
+}
+/* register page additional css ends */
+
+/* otp page 2 additional css starts */
+
+.otp-mobile-no{
+    font-weight: 700;
+}
+/* otp page 2 additional css ends */
 
 
 @media (max-width: 300px) {
     .main-create-account {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 }
 
+/* @media (min-width:480px) {
+    #body {
+        overflow: visible;
+    }
+} */
+
+
+/* parsley css */
+input.parsley-success,select.parsley-success,textarea.parsley-success{color:#468847;background-color:#dff0d8;border:1px solid #d6e9c6}input.parsley-error,select.parsley-error,textarea.parsley-error{color:#b94a48;background-color:#f2dede;border:1px solid #eed3d7}.parsley-errors-list{margin:2px 0 3px;padding:0;list-style-type:none;font-size:.9em;line-height:.9em;opacity:0;color:#b94a48;transition:all .3s ease-in;-o-transition:all .3s ease-in;-moz-transition:all .3s ease-in;-webkit-transition:all .3s ease-in}.parsley-errors-list.filled{opacity:1}
+
+.success {
+    color: #4F8A10;
+}
+
+.error{
+    color: #D8000C;
+}

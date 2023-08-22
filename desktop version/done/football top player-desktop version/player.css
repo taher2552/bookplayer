@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general css start  */
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --acc-color: #17479E;
+    --border-color: #dcdcdc;
+    --light-grey: #AAA;
+    --active-bg: #C7DBFF;
+    --search-bg: #fcfcfc;
+    --btn-red: #E73725;
+    --font-color: #505050;
+    --light-bg: #f8f8f8;
+    --save-btn: #077838;
+}
+
+.common-fonts {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: -0.02563rem;
+}
+
+/* general css start ends */
+
+/* page top css starts */
+
+.landing-page-container {
+    background-color: var(--white);
+}
+
+
+
+
+/* filter section css starts here  */
+.desktop-top-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.desktop-top-filter-text {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-left: 0.2rem;
+    cursor: pointer;
+}
+
+.desktop-top-filter-open {
+    border: 1px solid var(--border-color);
+    border-radius: 0.3125rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1.5rem 1rem;
+    width:30%;
+}
+
+.desktop-top-label {
+    color: bar(--font-color);
+}
+
+.desktop-top-input-section {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:start;
+}
+
+.desktop-top-input {
+    border-radius: 0.1875rem;
+    border: 1px solid #DCDCDC;
+    background: #FFF;
+    width: 100%;
+    padding:0.3rem 0.5rem;
+}
+
+.desktop-top-input::placeholder{
+    color:var(--light-grey);
+}
+
+.desktop-top-bottom-clear{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 0.94rem;
+    cursor: pointer;
+}
+
+.desktop-top-clear{
+    color:var(--acc-color);
+}
+
+/* filter section css ends here  */
+
+/* background css  */
+.desktop-top-player-bg {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.desktop-top-player-bg img {
+    width: 100%;
+    height: 10rem;
+}
+
+.desktop-top-fb-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* background css ends */
+
+/* card section starts here  */
+.desktop-top-card-section {
+    /* margin: 1rem; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 90%;
+
+}
+
+.desktop-top-cards {
+   border: 1px solid var(--border-color);
+    background: var(--white);
+    box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.05);
+    padding: 0.94rem;
+    margin-bottom: 0.94rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width:100%;
+    gap:1rem; 
+}
+
+.desktop-card-top {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.desktop-card-player {
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+    margin-right: 0.56rem;
+}
+
+.desktop-top-player-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.desktop-top-position {
+    color: var(--font-color);
+}
+
+
+.desktop-top-player-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+}
+
+.desktop-top-detail-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.desktop-top-details {
+    font-weight: 600;
+}
+
+.desktop-top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktop-top-map {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.desktop-card-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.desktop-top-map img {
+    margin-right: 0.2rem;
+}
+
+.desktop-top-profile-btn {
+    background-color: var(--white);
+    color: var(--btn-red);
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--btn-red);
+    cursor: pointer;
+}
+.desktop-top-profile-btn:hover {
+    background-color: var(--btn-red);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+/* card section ends here  */
+
+/* pagination section starts here  */
+.desktop-top-pagination {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 3%;
+}
+
+.desktop-top-pagination-text {
+    margin-bottom: 0.94rem;
+    font-weight: 600;
+}
+
+.desktop-top-pg-numbers {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.desktop-top-pg-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.88rem;
+    border: 1px solid var(--border-color);
+    width: 2.125rem;
+    height: 2.125rem;
+}
+
+.desktop-page-active {
+    border: 1px solid var(--btn-red);
+    color: var(--white);
+    background-color: var(--btn-red);
+}
+
+/* pagination section ends here  */
+
+
+/* desktop additional css  */
+
+.desktop-top-box{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+
+
+
+/* desktop additional css ends */
